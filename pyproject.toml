@@ -1,0 +1,17 @@
+[project]
+name = "canaryports"
+version = "0.1.0"
+description = "CanaryPorts is a firewall like service written in python. It opens a socket connection on pre-configured ports and will flag and/or block any IP address that interacts with the socket. "
+readme = "README.md"
+authors = [
+    { name = "Waut Lornoy", email = "REDACTED" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+canaryports = "canaryports:main"
+
+[build-system]
+requires = ["uv_build>=0.8.11,<0.9.0"]
+build-backend = "uv_build"
